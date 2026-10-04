@@ -176,6 +176,11 @@ if (codigo.isEmpty() || nombre.isEmpty() || tipo.isEmpty() || precio.isEmpty() |
     return;
 }
 
+if (!Validaciones.numeroPositivo(precio) || !Validaciones.numeroPositivo(stock)) {
+    JOptionPane.showMessageDialog(this, "El precio y el stock deben ser números positivos.");
+    return;
+}
+
 try (FileWriter fw = new FileWriter("medicamentos.txt", true);
      BufferedWriter bw = new BufferedWriter(fw);
      PrintWriter pw = new PrintWriter(bw)) {
