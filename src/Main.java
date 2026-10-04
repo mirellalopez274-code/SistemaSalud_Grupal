@@ -10,8 +10,9 @@ public class Main {
                     break;
                 }
             }
-        } catch (Exception ignored) {
-        }
+        } catch (Exception e) {
+    System.err.println("No se pudo configurar la apariencia de la aplicación: " + e.getMessage());
+}
 
         SwingUtilities.invokeLater(() -> new usuario().setVisible(true));
     }
