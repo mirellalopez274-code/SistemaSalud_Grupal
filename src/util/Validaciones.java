@@ -60,4 +60,15 @@ public final class Validaciones {
             }
         });
     }
-}
+
+        public static boolean textoNoVacio(String texto) {
+        return texto != null && !texto.trim().isEmpty();
+    }
+
+    public static boolean numeroPositivo(String numero) {
+        try {
+            return Integer.parseInt(numero) > 0;
+        } catch (NumberFormatException e) {
+            return false;
+        }
+    }
