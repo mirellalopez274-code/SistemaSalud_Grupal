@@ -24,6 +24,12 @@ public class CRUDCitas {
     public boolean actualizar(String id, String paciente, String doctor, String fecha, String hora, String motivo) {
         Cita c = buscar(id);
         if (c == null) return false;
+
+        if (paciente == null || paciente.trim().isEmpty()) return false;
+if (doctor == null || doctor.trim().isEmpty()) return false;
+if (fecha == null || fecha.trim().isEmpty()) return false;
+if (hora == null || hora.trim().isEmpty()) return false;
+
         c.setDniPaciente(paciente); c.setDniDoctor(doctor); c.setFecha(fecha); c.setHora(hora); c.setMotivo(motivo);
         guardar();
         return true;
