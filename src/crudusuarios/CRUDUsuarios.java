@@ -14,6 +14,12 @@ public class CRUDUsuarios {
 
     // AGREGAR
     public void agregarUsuario(Usuario usuario) {
+        if (buscarUsuario(usuario.getDni()) != null) {
+    System.out.println("Error: ya existe un usuario con ese DNI.");
+    return;
+
+}
+
         usuarios.add(usuario);
         guardarUsuarios();
     }
