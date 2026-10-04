@@ -13,6 +13,11 @@ public class CRUDDoctores {
     }
 
     public void agregarDoctor(Doctor doctor) {
+        if (buscarDoctor(doctor.getDni()) != null) {
+        System.out.println("Error: ya existe un doctor con ese DNI.");
+            return;
+        }
+
         doctores.add(doctor);
         guardarDoctores();
     }
