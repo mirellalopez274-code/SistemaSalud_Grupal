@@ -4,8 +4,8 @@ SISTEMA DE SALUD - PARCIAL INTEGRADO
 Proyecto integrado para Apache NetBeans.
 
 ACCESO AL SISTEMA
-Usuario: diego
-Contraseña: diego2230
+Credenciales: configuradas de forma local para las pruebas.
+No se almacenan contraseñas en el repositorio.
 
 MODULOS
 - Login
