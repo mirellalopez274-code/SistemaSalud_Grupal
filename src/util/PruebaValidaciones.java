@@ -17,5 +17,20 @@ public class PruebaValidaciones {
                 "Falló la validación de número negativo";
 
         System.out.println("Todas las pruebas de validaciones fueron exitosas.");
+       String resultado = Validaciones.transformarTexto(
+        "paciente",
+        texto -> texto.toUpperCase()
+);
+
+assert resultado.equals("PACIENTE") :
+        "Falló la función transformarTexto";
+
+boolean valido = Validaciones.validarConFuncion(
+        "Paciente",
+        texto -> !texto.trim().isEmpty()
+);
+
+assert valido :
+        "Falló la función validarConFuncion"; 
     }
 }

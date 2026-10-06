@@ -5,6 +5,7 @@ import javax.swing.text.AttributeSet;
 import javax.swing.text.BadLocationException;
 import javax.swing.text.DocumentFilter;
 import javax.swing.text.AbstractDocument;
+import java.util.function.Function;
 
 public final class Validaciones {
     private Validaciones() {}
@@ -72,3 +73,15 @@ public final class Validaciones {
             return false;
         }
     }
+
+    public static String transformarTexto(String texto, Function<String, String> funcion) {
+        return funcion.apply(texto);
+}
+
+   public static boolean validarConFuncion(String texto, Function<String, Boolean> funcion) {
+    return funcion.apply(texto);
+ }
+
+}   
+
+   
