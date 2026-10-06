@@ -1,3 +1,3 @@
-Doctor;Daleska;Barreto;73165145;Cirugia pediatrica
-Doctor;Daleska;Barreto;65837688;pediatria
+Doctor;Mirella;Avila;73165145;Cirugia pediatrica
+Doctor;Mirella;Avila;65837688;pediatria
 Enfermeras;Maria;Vegas;98765432;Emergencia
